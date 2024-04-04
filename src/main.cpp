@@ -43,6 +43,7 @@ class Palettes{
   public:
     void Draw(){
       DrawText(TextFormat("Palette:"),60, 810, 20, color_4);
+      DrawText(TextFormat("(keyboard numbers)"),450, 810, 12, color_4);
       DrawRectangle(160+((paletteNumber-1)*40),800,30,30,color_3);
       for(int i = 1; i<=7; i++){
         DrawRectangleLinesEx((Rectangle){(float) 160+((i-1)*40), (float) 800, (float) 30, (float) 30}, 3, color_4);
